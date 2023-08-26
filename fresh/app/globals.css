@@ -1,5 +1,7 @@
 body {
-    background-color: gray;
+    margin: 0;
+    background-color: #303030;
+    color: white;
 }
 
 .fresh {
@@ -9,9 +11,21 @@ body {
 
 .title {
     text-align: center;
+    margin-top: 50px;
 }
 
-/* list page */
+/* Home Page */
+.navbar {
+    background: white;
+    padding: 20px;
+}
+
+.navbar a {
+    margin-right: 10px;
+    text-decoration: none; /* 밑줄 없애기 */
+}
+
+/* List Page */
 .food {
     text-align: center;
     margin: 20px auto;
