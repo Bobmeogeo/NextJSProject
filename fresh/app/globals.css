@@ -1,3 +1,23 @@
+body {
+    background-color: gray;
+}
+
 .fresh {
+    text-align: center;
     color: royalblue;
+}
+
+.title {
+    text-align: center;
+}
+
+/* list page */
+.food {
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+    background-color: azure;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
 }
