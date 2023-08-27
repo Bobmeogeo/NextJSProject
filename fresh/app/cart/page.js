@@ -1,21 +1,23 @@
 import string from "./data"
 
 export default function Cart() {
+
+    let cart = ['Tomatoes', 'Pasta'] //funtion 안에 만든 변수는 function 안에서만 사용가능
+
     return (
       <div>
         <h4 className="title">Cart</h4>
-        <CartItem />
-        <CartItem />
-        <CartItem />
+        <CartItem item = {cart[0]} />
+        <CartItem item = {cart[1]}/>
         <p>{string}</p>
       </div>
     )
   } 
 
-  function CartItem(){
+  function CartItem(props){
     return(
     <div className="cart-item">
-        <p>상품명</p>
+        <p>{props.item}</p>
         <p>$40</p>
         <p>1개</p>
     </div>    
@@ -33,4 +35,9 @@ export default function Cart() {
   - html에 자바스크립트 기능 넣기 불가능, 로딩속도 빠름, 큰페이지
   2. client component: 파일 위에 'use client' 쓰기
   - html에 자바스크립트 기능 넣기 가능, useState, useEffect 사용가능
+  */
+
+  /* props 문법
+  1. <자식 컴포넌트 작명 = "전할 데이터"/>
+  2. 자식은 props.자경
   */
