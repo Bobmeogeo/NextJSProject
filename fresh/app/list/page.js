@@ -37,4 +37,7 @@ export default function List(){
     - return에 적은 것을 array로 담아준다.
     */
 
-    /* image 넣기 */
+    /* image 넣기 
+    1. img 태그
+    2. Image 컴포넌트 이용
+    */
