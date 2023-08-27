@@ -39,5 +39,5 @@ export default function Cart() {
 
   /* props 문법
   1. <자식 컴포넌트 작명 = "전할 데이터"/>
-  2. 자식은 props.자경
+  2. 자식은 props.작명
   */
