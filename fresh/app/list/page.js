@@ -1,3 +1,6 @@
+import Image from "next/image"
+import food0 from "/public/food0.png"
+
 export default function List(){
 
   let thing = ['Tomatoes', 'Pasta', 'Apple']
@@ -9,7 +12,9 @@ export default function List(){
           {
             thing.map((a, i)=>{
               return(
-                <div className="food">
+                <div className="food" key={i}>
+                  <img src={'food' + i + '.png'} 
+                  className="food-img"></img>
                   <h4>{thing[i]} $40</h4>
                 </div>
               )
@@ -31,3 +36,5 @@ export default function List(){
     - i는 반복될 때마다 0부터 1씩 커짐
     - return에 적은 것을 array로 담아준다.
     */
+
+    /* image 넣기 */

@@ -35,3 +35,8 @@ body {
     padding: 20px;
     border-radius: 5px;
 }
+
+.food-img {
+    width: 100%;
+    height: auto;
+}
